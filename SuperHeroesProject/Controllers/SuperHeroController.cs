@@ -23,7 +23,7 @@ namespace SuperHeroesProject.Controllers
             return View(selectedHero);
         }
         [HttpPost]
-        public ActionResult EditHero([Bind(Include = "HeroId,Name,AlterEgo, PrimaryAbility, SecondaryAbility,CatchPhrase")] SuperHero hero)
+        public ActionResult EditHero( SuperHero hero)
         {
             ApplicationDbContext db = new ApplicationDbContext();
             db.Entry(hero).State = EntityState.Modified;
