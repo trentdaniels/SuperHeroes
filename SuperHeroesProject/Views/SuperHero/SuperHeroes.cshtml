@@ -7,7 +7,7 @@
 <h2>SuperHeroes</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "CreateHero")
 </p>
 <table class="table">
     <tr>
@@ -23,9 +23,9 @@
             @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.HeroId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.HeroId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.HeroId })
+            @Html.ActionLink("Edit", "EditHero", new { id=item.HeroId }) |
+            @Html.ActionLink("Details", "HeroDetails", new { id=item.HeroId }) |
+            @Html.ActionLink("Delete", "DeleteHero", new { id=item.HeroId })
         </td>
     </tr>
 }
