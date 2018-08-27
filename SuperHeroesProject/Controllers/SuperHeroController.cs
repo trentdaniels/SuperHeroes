@@ -26,5 +26,9 @@ namespace SuperHeroesProject.Controllers
         {
             return View();
         }
+        public ActionResult CreateHero()
+        {
+            return View();
+        }
     }
 }
